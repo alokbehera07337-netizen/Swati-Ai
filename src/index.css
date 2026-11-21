@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Outfit", "Noto Sans Devanagari", "Noto Sans Oriya", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", "Noto Sans Oriya", system-ui, sans-serif;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #040711;
+    color: #f1f5f9;
+    font-family: var(--font-sans);
+    overscroll-behavior-y: contain;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.pb-safe {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.5rem, env(safe-area-inset-top));
+}
+
+/* Clean custom dark scrollbar */
+.maya-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.maya-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.maya-scroll::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.22);
+  border-radius: 9999px;
+}
+
+.maya-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.4);
+}

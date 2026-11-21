@@ -1,0 +1,6 @@
+{
+  "name": "MAYA AI",
+  "description": "Mobile-friendly Hindi and English AI voice assistant powered by Gemini intelligence with a futuristic glowing blue orb.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
